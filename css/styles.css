@@ -1,0 +1,166 @@
+/* Variables SCSS */
+/* Estructura del documento */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #f2d0ca;
+}
+
+nav a {
+  font: normal 16px/1.5 "Montserrat", sans-serif;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.footer {
+  text-decoration: none;
+  color: white;
+}
+
+navbar-toggler-icon {
+  color: #f2d0ca;
+}
+
+.nav-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.navbar-toggler {
+  color: #4D2425;
+}
+
+a.btn-primary {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  background-color: #524343;
+  border-radius: 50px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-color: #524343;
+  color: white;
+}
+a.btn-primary:hover {
+  background-color: #362c2c;
+  border-color: #362c2c;
+}
+a.btn-primary:focus, a.btn-primary:active {
+  background-color: #362c2c;
+}
+
+nav a:hover {
+  color: #ffa7a7;
+}
+
+nav a:visited {
+  color: #934446;
+}
+
+nav a.active {
+  color: #524343;
+}
+
+nav {
+  background-color: #4D2425;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #4D2425;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font: normal 16px/1.5 "Montserrat", sans-serif;
+}
+
+label.form-label {
+  font: normal 16px/1.5 "Montserrat", sans-serif;
+}
+
+input.form-control {
+  font: normal 16px/1.5 "Montserrat", sans-serif;
+}
+
+textarea.form-control {
+  font: normal 16px/1.5 "Montserrat", sans-serif;
+}
+
+/* Estilos SCSS */
+h1.title {
+  font: normal 46px/1.1 "Roboto Mono", monospace;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  color: #524343;
+  text-align: center;
+}
+
+h2.title {
+  font: normal 28px/1 "Roboto Mono", monospace;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  color: #524343;
+}
+
+h3.title {
+  font: normal 24px/1 "Roboto Mono", monospace;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  color: #524343;
+}
+
+p, li {
+  font: normal 16px/1.5 "Montserrat", sans-serif;
+  color: #524343;
+}
+
+.carousel-wrapper {
+  padding: 20px;
+}
+
+img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section.hero-section {
+  background-image: url("../public/images/artandwine-event.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+section.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+section.hero-section .container {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+section.hero-section .container h1 {
+  font: normal 46px/1.1 "Roboto Mono", monospace;
+  font-weight: bold;
+}
+section.hero-section .container p {
+  font: normal 16px/1.5 "Montserrat", sans-serif;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,200 @@
+/* Variables SCSS */
+$title-font: normal 46px/1.1 'Roboto Mono', monospace;
+$subtitle-font: normal 28px/1 'Roboto Mono', monospace;
+$subtitle-h3: normal 24px/1 'Roboto Mono', monospace;
+$body: normal 16px/1.5 'Montserrat', sans-serif;
+$warm-brown: #524343;
+$warm-pink: #4D2425;
+$pale-pink: #f2d0ca;
+$pale-pink-hover: #ffa7a7;
+$footer-bg: #4D2425;
+$footer-color: white;
+$primary-color: #7a1e48;
+$secondary-color: #fff;
+$hero-overlay: rgba(0, 0, 0, 0.4);
+
+
+/* Estructura del documento */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: $pale-pink;
+}
+
+nav a {
+    font: $body;
+    color: $footer-color; // Default color for navbar links
+    text-decoration: none; // Remove underline from links
+    transition: color 0.3s ease; // Smooth transition for color changes
+}
+
+a.footer{
+ text-decoration: none;
+ color: $footer-color;
+}
+
+navbar-toggler-icon {
+color: #f2d0ca;
+}
+
+.nav-item {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+}
+
+.navbar-toggler {
+ color: $warm-pink;
+}
+
+a.btn-primary {
+    font-family: 'Roboto Mono', monospace; // Custom font
+    font-weight: 400; // Adjust font weight if needed
+    background-color: $warm-brown; // Custom background color
+    border-radius: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-color: $warm-brown; // Border color to match the background
+    color: white; // Text color
+
+    &:hover {
+        background-color: darken($warm-brown, 10%); // Darker background on hover
+        border-color: darken($warm-brown, 10%); // Darker border on hover
+    }
+
+    &:focus, &:active {
+       background-color: darken($warm-brown, 10%);
+    }
+}
+
+nav a:hover {
+    color: $pale-pink-hover; // Color on hover
+}
+
+nav a:visited {
+    color: lighten($warm-pink, 20%); // Color for visited links, adjust as needed
+}
+
+nav a.active {
+    color: $warm-brown; // Color for active link, you can add a class `active` in HTML to indicate the current page
+}
+
+
+nav{
+background-color: $warm-pink;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: $footer-bg;
+    color: $footer-color;
+    text-align: center;
+    padding: 10px;
+    font: $body;
+}
+
+
+label.form-label {
+    font: $body;
+}
+
+input.form-control {
+    font: $body;
+}
+
+textarea.form-control {
+    font: $body;
+}
+
+/* Estilos SCSS */
+h1.title {
+    font: $title-font;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    color: $warm-brown;
+    text-align: center;
+}
+
+h2.title {
+    font: $subtitle-font;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    color: $warm-brown;
+}
+
+h3.title {
+    font: $subtitle-h3;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    color: $warm-brown;
+}
+
+
+
+p, li {
+    font: $body;
+    color: $warm-brown;
+}
+
+.carousel-wrapper {
+    padding: 20px;
+}
+
+img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+
+section.hero-section {
+    background-image: url('/images/artandwine-event.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $hero-overlay;
+    }
+  
+    .container {
+      position: relative;
+      z-index: 2;
+      color: $secondary-color;
+    
+      h1 {
+        font: $title-font;
+        font-weight: bold;
+      }
+  
+      p {
+        font: $body;
+        color: #ffffff;
+        margin-bottom: 2rem;
+      }
+
+    }
+}
